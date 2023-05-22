@@ -13,7 +13,7 @@ import java.util.Map;
 public class CommentDaoImpl implements CommentDao {
   @Autowired
   private SqlSession session;
-  private static String namespace = "com.fastcampus.ch4.dao.CommentMapper.";
+  private static String namespace = "com.project.velmu.dao.CommentMapper.";
 
   @Override
   public int count(Integer bno) throws Exception {

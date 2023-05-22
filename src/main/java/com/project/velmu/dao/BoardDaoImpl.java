@@ -14,7 +14,7 @@ import java.util.Map;
 public class BoardDaoImpl implements BoardDao {
   @Autowired
   private SqlSession session;
-  private static String namespace = "com.fastcampus.ch4.dao.BoardMapper.";
+  private static String namespace = "com.project.velmu.dao.BoardMapper.";
 
   public int count() throws Exception {
     return session.selectOne(namespace+"count");
