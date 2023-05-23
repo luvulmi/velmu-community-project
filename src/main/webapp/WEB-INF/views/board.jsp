@@ -18,7 +18,7 @@
 <body>
 <div id="menu">
   <ul>
-    <li id="logo">fastcampus</li>
+    <li id="logo">velmu</li>
     <li>${loginIdView}</li>
     <li><a href="<c:url value='/'/>">Home</a></li>
     <li><a href="<c:url value='/board/list'/>">Board</a></li>
