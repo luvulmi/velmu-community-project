@@ -31,21 +31,16 @@
             <i class="fa fa-exclamation-circle"> ${URLDecoder.decode(param.msg)}</i>
         </c:if>
     </div>
-    <label for="">아이디</label>
+    <label for="id">아이디</label>
     <input class="input-field" type="text" name="id" placeholder="8~12자리의 영대소문자와 숫자 조합">
-    <label for="">비밀번호</label>
+    <label for="pwd">비밀번호</label>
     <input class="input-field" type="text" name="pwd" placeholder="8~12자리의 영대소문자와 숫자 조합">
-    <label for="">이름</label>
+    <label for="name">이름</label>
     <input class="input-field" type="text" name="name" placeholder="홍길동">
-    <label for="">이메일</label>
+    <label for="email">이메일</label>
     <input class="input-field" type="text" name="email" placeholder="example@fastcampus.co.kr">
-    <label for="">생일</label>
+    <label for="birth">생일</label>
     <input class="input-field" type="text" name="birth" placeholder="2020/12/31">
-    <div class="sns-chk">
-        <label><input type="checkbox" name="sns" value="facebook"/>페이스북</label>
-        <label><input type="checkbox" name="sns" value="kakaotalk"/>카카오톡</label>
-        <label><input type="checkbox" name="sns" value="instagram"/>인스타그램</label>
-    </div>
     <button>회원 가입</button>
 </form>
 <script>

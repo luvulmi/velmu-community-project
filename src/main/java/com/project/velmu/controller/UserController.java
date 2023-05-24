@@ -1,7 +1,7 @@
 package com.project.velmu.controller;
 
 import com.project.velmu.dao.UserDao;
-import com.project.velmu.domain.User;
+import com.project.velmu.domain.UserDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -75,16 +75,16 @@ public class UserController {
   }
 
   private boolean loginCheck(String id, String pwd) {
-    User user = null;
+    UserDto userDto = null;
 
     try {
-      user = userDao.selectUser(id);
+      userDto = userDao.selectUser(id);
     } catch (Exception e) {
       e.printStackTrace();
       return false;
     }
 
-    return user!=null && user.getPwd().equals(pwd);
+    return userDto !=null && userDto.getPwd().equals(pwd);
 //        return "asdf".equals(id) && "1234".equals(pwd);
   }
 }

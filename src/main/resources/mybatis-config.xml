@@ -4,6 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <typeAliases>
+        <typeAlias alias="UserDto" type="com.project.velmu.domain.UserDto"/>
         <typeAlias alias="BoardDto" type="com.project.velmu.domain.BoardDto"/>
         <typeAlias alias="CommentDto" type="com.project.velmu.domain.CommentDto"/>
         <typeAlias alias="SearchCondition" type="com.project.velmu.domain.SearchCondition"/>
